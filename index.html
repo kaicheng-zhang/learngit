@@ -48,13 +48,15 @@
             <input :disabled="name.length===0" @click="addItem" type="button" value="添加">
         </div>
         <br>
-        <H4>输入想要查询品牌的名称</H4>
+        <H4>输入想要查询品牌的名称:</H4>
         <div class="add">
             品牌名称:
-            <input placeholder="请输入搜索条件" type="text" v-model="searchVal">
+            <label>
+                <input placeholder="请输入搜索条件" type="text" v-model="searchVal">
+            </label>
         </div>
         <br>
-        <H4>品牌列表显示</H4>
+        <H4>品牌列表显示:</H4>
         <div>
             <table class="tb">
                 <tr>
